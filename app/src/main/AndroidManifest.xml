@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iot.project.caretaker">
+
+    <!-- PERMISSIONS -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/care_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name=".ApplicationHelper">
+
+        <!-- ACTIVITIES -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Quicktab" />
+        <activity android:name=".Reminder"
+            android:noHistory="true" />
+        <activity android:name=".Add_Reminder"
+            android:noHistory="true" />
+        <activity android:name=".Add_User"
+            android:noHistory="true" />
+        <activity android:name=".About_user"
+            android:noHistory="true" />
+        <activity android:name=".interfacing_bridge.Server"
+            android:noHistory="true" />
+
+        <!-- PROVIDERS -->
+        <provider
+            android:name=".database.ReminderProvider"
+            android:authorities="iot.project.caretaker"
+            android:exported="false" /> <!-- Not Visible to other app -->
+        <!-- RECIEVERS -->
+        <receiver android:name=".CoffeeProcessReciever" />
+        <receiver android:name=".DrinkProcessReciever"/>
+        <receiver android:name=".MedicineProcessReciever"/>
+
+    </application>
+</manifest>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_layout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_face_black_48dp" />
+
+        <TextView
+            android:id="@+id/reminder_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:text="@string/about_user"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:layout_alignBaseline="@id/editor">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:text="User_name" />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"
+            android:text="Age" />
+
+        <TextView
+            android:id="@+id/uage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:text="User_age" />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"
+            android:text="Gender" />
+
+        <TextView
+            android:id="@+id/ugender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:text="User_gender" />
+
+        <TextView
+            android:id="@+id/medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"
+            android:text="Medicines" />
+
+        <TextView
+            android:id="@+id/umedicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:text="User_medicine" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/save_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/user_info"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <Button
+            android:id="@+id/uedit_btn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:background="@drawable/btn_layout"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/delete_urecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/save_btn_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:text="Delete Record" />
+    </LinearLayout>
+
+</RelativeLayout>

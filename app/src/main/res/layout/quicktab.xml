@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/indicator"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/indi_tab"
+        android:gravity="center"
+        android:text="Select Process"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/time_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/prc_btn_layout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp"
+        android:text="00:00:00" />
+<LinearLayout
+    android:id="@+id/prc_btn_layout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/indicator"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="50dp">
+
+    <Button
+        android:id="@+id/cofe_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/btn_layout"
+        android:text="@string/coffee_btn" />
+
+    <Button
+        android:id="@+id/drnk_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/btn_layout"
+        android:text="@string/drink_btn" />
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prc_btn_layout2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prc_btn_layout1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/mlk_btn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn_layout"
+            android:text="@string/mlk_btn"/>
+
+        <Button
+            android:id="@+id/cncl_btn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/btn_layout"
+            android:textColor="#ff0000"
+            android:text="@string/cncl_btn" />
+    </LinearLayout>
+
+<LinearLayout
+    android:id="@+id/enter_time_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/prc_btn_layout2"
+    android:layout_centerHorizontal="true"
+    android:layout_marginStart="15sp"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:text="Enter Time : "
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/entr_mins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/prc_btn_layout2"
+        android:layout_below="@+id/prc_btn_layout2"
+        android:layout_marginTop="25sp"
+        android:ems="10"
+        android:hint="Minutes"
+        android:inputType="number" />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/serv_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/enter_time_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_layout"
+        android:text="@string/serv_btn" />
+
+    <TextView
+        android:id="@+id/warning_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Warning: Do not close the activity or the application"
+        android:textColor="#FF0000"
+        android:textStyle="bold"/>
+
+
+</RelativeLayout>

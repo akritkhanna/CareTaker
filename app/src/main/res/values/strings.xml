@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CareTaker</string>
+    <string name="quicktab_btn">Quicktab</string>
+    <string name="reminder_btn">Reminder</string>
+    <string name="about_user">About Me</string>
+    <string name="coffee_btn">Coffee</string>
+    <string name="drink_btn">Drinks</string>
+    <string name="mlk_btn">Milk</string>
+    <string name="cncl_btn">Cancle</string>
+    <string name="serv_btn">Serve</string>
+    <string name="save_btn">Save</string>
+    <string name="delete_btn">Delete</string>
+    <string name="medi_process">Medicine</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="edit_reminder">Edit Reminder</string>
+    <string name="failed_operation">Failed</string>
+    <string name="insert_operation">Reminder Saved</string>
+    <string name="update_operation">Reminder Updated</string>
+    <string name="delete_operation">Deleted</string>
+    <string name="repeat_on">Repeat:On</string>
+    <string name="repeat_off">Repeat:Off</string>
+    <string name="active">Active</string>
+    <string name="not_active">Not Active</string>
+    <string name="title_activity_about">about</string>
+    <string name="edit_medi">Edit Medicine</string>
+    <string name="enter_name">Name: </string>
+    <string name="enter_age">Age: </string>
+    <string name="gender">Gender: </string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="medi_user">Medicine: </string>
+    <string name="error_in_retrival">Unable to make contact with CareTaker Device</string>
+</resources>

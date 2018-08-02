@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_layout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_mode_edit_black_48dp" />
+
+        <TextView
+            android:id="@+id/reminder_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editor"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/title_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_title_black_48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/enter_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:maxLength="15"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/name_layout"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/time_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_alarm_on_black_48dp" />
+
+        <TextView
+            android:id="@+id/select_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:textSize="20sp"
+            android:text="hh:mm" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gender_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/time_layout"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/process_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/process_logo" />
+
+        <RadioGroup
+            android:id="@+id/process_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp">
+
+            <RadioButton
+                android:id="@+id/coffee_prc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="@string/coffee_btn" />
+
+            <RadioButton
+                android:id="@+id/drink_prc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/drink_btn" />
+
+            <RadioButton
+                android:id="@+id/medicine_prc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/medi_process" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/repstatus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/gender_layout"
+        android:layout_marginTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/repeat_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_repeat_black_48dp" />
+
+        <Switch
+            android:id="@+id/repeat_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/repeat_status_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/repeat_off"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/astatus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/repstatus_layout"
+        android:layout_marginTop="10dp">
+
+
+        <ImageView
+            android:id="@+id/astatus_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/ic_notifications_active_black_48dp" />
+
+        <Switch
+            android:id="@+id/astatus_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:checked="true"
+            android:enabled="false"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/alarm_status_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/active"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/astatus_layout"
+        android:layout_marginTop="70dp">
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/delete_btn"
+            android:background="@drawable/btn_layout"/>
+
+        <Button
+            android:id="@+id/save_btn"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="60dp"
+            android:text="@string/save_btn"
+            android:background="@drawable/btn_layout"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
